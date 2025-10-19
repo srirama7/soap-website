@@ -1,0 +1,13 @@
+    {"mcpServers": {
+    "system-info": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+
+        
+        "C:/Users/amogh/Downloads/mcp/dist/index.js"
+      ],
+      "env": {}
+    }
+  }
+}
