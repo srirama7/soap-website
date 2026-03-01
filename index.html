@@ -260,7 +260,6 @@
             const whatsappMessage = `*New Contact Form Message*%0A%0A` +
                                    `*Name:* ${encodeURIComponent(name)}%0A` +
                                    `*Email:* ${encodeURIComponent(email)}%0A` +
-                                   `*Message:* ${encodeURIComponent(email)}%0A` +
                                    `*Message:* ${encodeURIComponent(message)}`;
 
             // WhatsApp number (Indian format: 91 + 10 digit number)
@@ -270,7 +269,7 @@
             const whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
 
             // Open WhatsApp
-            window.open(whatsappURL, '_blank');
+            window.location.href = whatsappURL;
 
             // Reset form
             this.reset();
