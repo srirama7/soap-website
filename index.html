@@ -4,295 +4,589 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayushree Herbals - Natural Herbal Products</title>
-    <meta name="description" content="Ayushree Herbals offers natural herbal products and herbal solutions. Shop our range of premium herbal products.">
-    <meta name="keywords" content="Ayushree Herbals, herbal products, natural products, herbal solution, ayurvedic products">
+    <title>Ayushree Herbals | 100% Natural Herbal Soaps & Products</title>
+    <meta name="description" content="Ayushree Herbals offers handcrafted natural herbal soaps and eco-friendly products. Formulated with authentic Ayurvedic ingredients for radiant, healthy skin.">
+    <meta name="keywords" content="Ayushree Herbals, Panchagavya Soap, Ayukid Soap, Ayuderm Soap, Looks Soap, Herbal Detergent, Natural Herbal Products, Ayurvedic Soap Bengaluru">
+    <meta name="author" content="Ayushree Herbals">
     <link rel="canonical" href="https://ayushreeherbals.com/">
-    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicons -->
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#8e24aa">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ayushreeherbals.com/">
-    <meta property="og:title" content="Ayushree Herbals - Natural Herbal Products">
-    <meta property="og:description" content="Ayushree Herbals offers natural herbal products and herbal solutions. Shop our range of premium herbal products.">
+    <meta property="og:title" content="Ayushree Herbals | 100% Natural Herbal Soaps & Solutions">
+    <meta property="og:description" content="Discover pure herbal beauty and wellness. Handcrafted natural soaps made with Ayurvedic wisdom and botanical purity.">
     <meta property="og:image" content="https://ayushreeherbals.com/images/logo.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://ayushreeherbals.com/">
-    <meta property="twitter:title" content="Ayushree Herbals - Natural Herbal Products">
-    <meta property="twitter:description" content="Ayushree Herbals offers natural herbal products and herbal solutions. Shop our range of premium herbal products.">
+    <meta property="twitter:title" content="Ayushree Herbals | Pure Herbal Solutions">
+    <meta property="twitter:description" content="Handcrafted natural soaps made with Ayurvedic wisdom and botanical purity.">
     <meta property="twitter:image" content="https://ayushreeherbals.com/images/logo.png">
+
+    <!-- Structured Data / JSON-LD for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Ayushree Herbals",
+      "url": "https://ayushreeherbals.com",
+      "logo": "https://ayushreeherbals.com/images/logo.png",
+      "description": "Authentic Ayurvedic & Natural Herbal Products for skincare and home care.",
+      "telephone": "+919448429858",
+      "email": "ayushreeherbals@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Anagha #134, 2nd Main, 3rd Cross, Ramaiah Layout",
+        "addressLocality": "Bengaluru",
+        "postalCode": "560084",
+        "addressCountry": "IN"
+      }
+    }
+    </script>
 </head>
 
 <body>
     <!-- Header -->
-    <header>
-        <nav class="navbar">
-            <div class="logo-text">
-                <h1>Ayushree Herbals</h1>
-                <p class="tagline">Herbal Solution</p>
-            </div>
-
-            <div class="logo-center">
+    <header id="site-header">
+        <nav class="navbar container">
+            <a href="#home" class="brand-link">
                 <img src="images/logo.png" alt="Ayushree Herbals Logo" class="header-logo">
-            </div>
+                <div class="logo-text">
+                    <h1>Ayushree Herbals</h1>
+                    <span class="tagline">Pure Ayurvedic Solutions</span>
+                </div>
+            </a>
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-item">Home</a></li>
+                <li><a href="#products" class="nav-item">Products</a></li>
+                <li><a href="#benefits" class="nav-item">Why Us</a></li>
+                <li><a href="#about" class="nav-item">Our Story</a></li>
+                <li><a href="#testimonials" class="nav-item">Reviews</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+                <li><a href="https://wa.me/918762616609?text=Hello%20Ayushree%20Herbals,%20I%20would%20like%20to%20inquire%20about%20your%20products." target="_blank" rel="noopener noreferrer" class="nav-cta-btn">WhatsApp Us 💬</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>Discover the Power of Natural Herbal Products</h2>
-            <p>Carefully formulated with nature's finest ingredients and ancient Ayurvedic wisdom</p>
-            <a href="#products" class="cta-button">Explore Our Products</a>
-        </div>
-    </section>
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-decor decor-1"></div>
+            <div class="hero-decor decor-2"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">🌿 100% Pure & Ayurvedic Formulations</div>
+                    <h2>Revitalize Your Skin with the Purity of Nature</h2>
+                    <p>Handcrafted herbal soaps and eco-friendly home care, lovingly formulated with sacred botanical extracts and time-tested Ayurvedic wisdom.</p>
+                    <div class="hero-actions">
+                        <a href="#products" class="cta-button primary-btn">Explore Collection ✨</a>
+                        <a href="https://wa.me/918762616609?text=Hello%20Ayushree%20Herbals,%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener noreferrer" class="cta-button secondary-btn">Order on WhatsApp 📱</a>
+                    </div>
 
-
-    <!-- Products Section -->
-    <section id="products" class="products">
-        <div class="container">
-            <h2 class="section-title">Our Premium Herbal Products</h2>
-            <p class="section-subtitle">Each product is carefully crafted with natural ingredients to nourish and
-                rejuvenate</p>
-
-            <div class="product-grid">
-                <!-- Product 1: Ayukid -->
-                <div class="product-card">
-                    <div class="product-image ayukid">
-                        <img src="images/ayukid.jpeg" alt="Ayukid Soap">
-                        <span class="product-badge">Kids Special</span>
-                    </div>
-                    <div class="product-info">
-                        <h3>Ayukid Soap</h3>
-                        <p class="product-description">Gentle and mild formula specially designed for children's
-                            delicate skin. Made with natural ingredients that are safe and nurturing.</p>
-                        <ul class="product-features">
-                            <li>✓ Tear-free formula</li>
-                            <li>✓ Hypoallergenic</li>
-                            <li>✓ Dermatologically tested</li>
-                            <li>✓ Pleasant fragrance</li>
-                        </ul>
-                        <button class="buy-button">Learn More</button>
-                    </div>
-                </div>
-
-                <!-- Product 2: Looks -->
-                <div class="product-card">
-                    <div class="product-image looks">
-                        <img src="images/looks.webp" alt="Looks Soap">
-                        <span class="product-badge">Beauty</span>
-                    </div>
-                    <div class="product-info">
-                        <h3>Looks Soap</h3>
-                        <p class="product-description">Premium beauty soap that enhances your natural glow. Enriched
-                            with essential oils and botanicals for radiant, healthy-looking skin.</p>
-                        <ul class="product-features">
-                            <li>✓ Brightening formula</li>
-                            <li>✓ Anti-aging properties</li>
-                            <li>✓ Deep cleansing</li>
-                            <li>✓ Luxurious lather</li>
-                        </ul>
-                        <button class="buy-button">Learn More</button>
-                    </div>
-                </div>
-
-                <!-- Product 3: Ayuderm -->
-                <div class="product-card">
-                    <div class="product-image ayuderm">
-                        <img src="images/ayuderm.jpeg" alt="Ayuderm Soap">
-                        <span class="product-badge">Therapeutic</span>
-                    </div>
-                    <div class="product-info">
-                        <h3>Ayuderm Soap</h3>
-                        <p class="product-description">Therapeutic soap designed for sensitive and problematic skin.
-                            Infused with Ayurvedic herbs to soothe and heal your skin naturally.</p>
-                        <ul class="product-features">
-                            <li>✓ Soothes irritation</li>
-                            <li>✓ Antibacterial properties</li>
-                            <li>✓ Moisturizing formula</li>
-                            <li>✓ 100% natural herbs</li>
-                        </ul>
-                        <button class="buy-button">Learn More</button>
-                    </div>
-                </div>
-
-                <!-- Product 4: Panchagavya Soap -->
-                <div class="product-card featured">
-                    <div class="product-image panchagavya">
-                        <img src="images/panchagavya.png" alt="Panchagavya Soap">
-                        <span class="product-badge bestseller">Bestseller</span>
-                    </div>
-                    <div class="product-info">
-                        <h3>Panchagavya Soap</h3>
-                        <p class="product-description">Traditional Ayurvedic soap made with the sacred five products of
-                            the cow. Experience ancient wisdom for healthy, glowing skin.</p>
-                        <ul class="product-features">
-                            <li>✓ Traditional Panchagavya formula</li>
-                            <li>✓ Rich in natural nutrients</li>
-                            <li>✓ Promotes skin health</li>
-                            <li>✓ 100% Ayurvedic</li>
-                        </ul>
-                        <button class="buy-button">Learn More</button>
-                    </div>
-                </div>
-
-                <!-- Product 5: Detergent Powder -->
-                <div class="product-card">
-                    <div class="product-image detergent">
-                        <img src="images/detergent.webp" alt="Herbal Detergent Powder">
-                        <span class="product-badge">Eco-Friendly</span>
-                    </div>
-                    <div class="product-info">
-                        <h3>Herbal Detergent Powder</h3>
-                        <p class="product-description">Natural detergent powder for your laundry needs. Powerful
-                            cleaning action with herbal ingredients that are gentle on fabrics and the environment.</p>
-                        <ul class="product-features">
-                            <li>✓ Plant-based ingredients</li>
-                            <li>✓ Tough on stains</li>
-                            <li>✓ Biodegradable formula</li>
-                            <li>✓ Fresh herbal fragrance</li>
-                        </ul>
-                        <button class="buy-button">Learn More</button>
+                    <div class="trust-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">✨</span>
+                            <span class="highlight-text">Chemical & Paraben Free</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🧴</span>
+                            <span class="highlight-text">Dermatologically Safe</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🇮🇳</span>
+                            <span class="highlight-text">Authentic Ayurvedic Recipes</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Benefits Section -->
-    <section class="benefits">
-        <div class="container">
-            <h2 class="section-title">Why Choose Ayushree Herbals?</h2>
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">🌿</div>
-                    <h3>100% Natural</h3>
-                    <p>Made with pure, natural ingredients without harmful chemicals</p>
+        <!-- Products Section -->
+        <section id="products" class="products">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Handcrafted Wellness</span>
+                    <h2 class="section-title">Our Premium Herbal Products</h2>
+                    <p class="section-subtitle">Every bar is meticulously crafted with natural herbal botanicals to nourish, protect, and revitalize</p>
                 </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">✋</div>
-                    <h3>Quality Crafted</h3>
-                    <p>Each product is carefully made with attention to detail</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🧪</div>
-                    <h3>Tested & Safe</h3>
-                    <p>Dermatologically tested and approved for all skin types</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">♻️</div>
-                    <h3>Eco-Friendly</h3>
-                    <p>Sustainable packaging and environmentally conscious production</p>
+
+                <div class="product-grid">
+                    <!-- Product 1: Panchagavya Soap -->
+                    <div class="product-card featured">
+                        <div class="product-image panchagavya">
+                            <img src="images/panchagavya.png" alt="Panchagavya Soap - Traditional Ayurvedic Soap" loading="lazy">
+                            <span class="product-badge bestseller">⭐ Bestseller</span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Sacred Ayurvedic Formula</span>
+                            <h3>Panchagavya Soap</h3>
+                            <p class="product-description">Traditional Ayurvedic soap crafted with the sacred five ingredients of indigenous cows. Renowned for detoxifying, skin-toning, and deep nourishing benefits.</p>
+                            <ul class="product-features">
+                                <li><span>✓</span> Authentic Panchagavya blend</li>
+                                <li><span>✓</span> Deeply purifying & anti-bacterial</li>
+                                <li><span>✓</span> Restores natural skin glow</li>
+                                <li><span>✓</span> Suitable for daily spiritual bath</li>
+                            </ul>
+                            <div class="product-footer">
+                                <a href="https://wa.me/918762616609?text=Hi%20Ayushree%20Herbals,%20I%20am%20interested%20in%20ordering%20the%20Panchagavya%20Soap.%20Please%20share%20price%20and%20details." target="_blank" rel="noopener noreferrer" class="buy-button">
+                                    Order on WhatsApp 💬
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2: Ayukid Soap -->
+                    <div class="product-card">
+                        <div class="product-image ayukid">
+                            <img src="images/ayukid.jpeg" alt="Ayukid Soap - Kids Special Gentle Formula" loading="lazy">
+                            <span class="product-badge kids">👶 Kids Special</span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Gentle Baby & Child Care</span>
+                            <h3>Ayukid Soap</h3>
+                            <p class="product-description">Ultra-mild and nourishing herbal formulation specially designed for children's soft and sensitive skin. Pure, safe, and tear-free daily care.</p>
+                            <ul class="product-features">
+                                <li><span>✓</span> Tear-free & ultra-gentle formula</li>
+                                <li><span>✓</span> Hypoallergenic natural botanicals</li>
+                                <li><span>✓</span> Dermatologically tested & safe</li>
+                                <li><span>✓</span> Soft, pleasant natural aroma</li>
+                            </ul>
+                            <div class="product-footer">
+                                <a href="https://wa.me/918762616609?text=Hi%20Ayushree%20Herbals,%20I%20am%20interested%20in%20ordering%20the%20Ayukid%20Soap.%20Please%20share%20price%20and%20details." target="_blank" rel="noopener noreferrer" class="buy-button">
+                                    Order on WhatsApp 💬
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3: Looks Soap -->
+                    <div class="product-card">
+                        <div class="product-image looks">
+                            <img src="images/looks.webp" alt="Looks Soap - Glow & Beauty" loading="lazy">
+                            <span class="product-badge beauty">✨ Beauty & Glow</span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Radiance & Complexion</span>
+                            <h3>Looks Soap</h3>
+                            <p class="product-description">Premium beauty soap that naturally enhances skin brightness and texture. Enriched with rare herbal oils for a glowing, youthfully vibrant look.</p>
+                            <ul class="product-features">
+                                <li><span>✓</span> Natural skin brightening & tone</li>
+                                <li><span>✓</span> Antioxidant & anti-aging herbs</li>
+                                <li><span>✓</span> Deep pore cleansing action</li>
+                                <li><span>✓</span> Silky, creamy luxurious lather</li>
+                            </ul>
+                            <div class="product-footer">
+                                <a href="https://wa.me/918762616609?text=Hi%20Ayushree%20Herbals,%20I%20am%20interested%20in%20ordering%20the%20Looks%20Soap.%20Please%20share%20price%20and%20details." target="_blank" rel="noopener noreferrer" class="buy-button">
+                                    Order on WhatsApp 💬
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4: Ayuderm Soap -->
+                    <div class="product-card">
+                        <div class="product-image ayuderm">
+                            <img src="images/ayuderm.jpeg" alt="Ayuderm Soap - Therapeutic Skin Care" loading="lazy">
+                            <span class="product-badge therapeutic">🌿 Therapeutic</span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Targeted Skin Therapy</span>
+                            <h3>Ayuderm Soap</h3>
+                            <p class="product-description">Therapeutic Ayurvedic soap formulated to calm sensitive, allergy-prone, and troubled skin. Calms itching, redness, and strengthens skin defense.</p>
+                            <ul class="product-features">
+                                <li><span>✓</span> Calms rashes, itchiness & dryness</li>
+                                <li><span>✓</span> Natural antimicrobial barrier</li>
+                                <li><span>✓</span> Deeply hydrating moisture lock</li>
+                                <li><span>✓</span> 100% active Ayurvedic herbs</li>
+                            </ul>
+                            <div class="product-footer">
+                                <a href="https://wa.me/918762616609?text=Hi%20Ayushree%20Herbals,%20I%20am%20interested%20in%20ordering%20the%20Ayuderm%20Soap.%20Please%20share%20price%20and%20details." target="_blank" rel="noopener noreferrer" class="buy-button">
+                                    Order on WhatsApp 💬
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5: Herbal Detergent Powder -->
+                    <div class="product-card">
+                        <div class="product-image detergent">
+                            <img src="images/detergent.webp" alt="Herbal Detergent Powder - Eco Friendly" loading="lazy">
+                            <span class="product-badge eco">🌱 Eco-Friendly</span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Natural Fabric Care</span>
+                            <h3>Herbal Detergent Powder</h3>
+                            <p class="product-description">High-performance plant-based laundry detergent. Delivers powerful stain removal while remaining gentle on hands, soft on fabrics, and safe for nature.</p>
+                            <ul class="product-features">
+                                <li><span>✓</span> Plant-derived cleaning surfactants</li>
+                                <li><span>✓</span> Tough on stubborn dirt & stains</li>
+                                <li><span>✓</span> 100% biodegradable & gentle</li>
+                                <li><span>✓</span> Uplifting natural herbal fragrance</li>
+                            </ul>
+                            <div class="product-footer">
+                                <a href="https://wa.me/918762616609?text=Hi%20Ayushree%20Herbals,%20I%20am%20interested%20in%20ordering%20the%20Herbal%20Detergent%20Powder.%20Please%20share%20price%20and%20details." target="_blank" rel="noopener noreferrer" class="buy-button">
+                                    Order on WhatsApp 💬
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">Our Story</h2>
-            <p class="about-text">
-                At Ayushree Herbals, we believe in the power of nature to heal and beautify. Our journey began with a
-                simple mission:
-                to create premium quality herbal products that are safe, effective, and environmentally friendly. Each
-                of our products
-                is crafted with carefully selected natural ingredients, combining traditional Ayurvedic wisdom with
-                modern science.
-            </p>
-            <p class="about-text">
-                From gentle care for your child with Ayukid, radiant beauty with Looks, therapeutic healing with
-                Ayuderm,
-                traditional Panchagavya soap, to eco-friendly detergent powder - we have the perfect natural solution
-                for all your needs.
-            </p>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <p>📧 Email: ayushreeherbals@gmail.com</p>
-                    <p>📱 Phone: 9448429858</p>
-                    <p>📍 Address: Anagha 134# 2nd Main 3rd Cross Ramiah Layout Bengaluru 560084</p>
+        <!-- Benefits / Why Choose Us Section -->
+        <section id="benefits" class="benefits">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Pure Botanical Goodness</span>
+                    <h2 class="section-title">Why Choose Ayushree Herbals?</h2>
+                    <p class="section-subtitle">We merge centuries-old Ayurvedic secrets with strict ethical quality standards</p>
                 </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <input type="text" id="name" placeholder="Your Name" required>
-                        <input type="email" id="email" placeholder="Your Email" required>
-                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-                        <button type="submit" class="submit-button">Send via WhatsApp</button>
-                    </form>
+
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon-wrapper">
+                            <span class="benefit-icon">🌿</span>
+                        </div>
+                        <h3>100% Herbal Botanicals</h3>
+                        <p>Crafted exclusively with natural botanical extracts, nourishing plant oils, and zero synthetic fillers or harsh sulfating agents.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon-wrapper">
+                            <span class="benefit-icon">✨</span>
+                        </div>
+                        <h3>Traditional Craftsmanship</h3>
+                        <p>Small-batch production ensures the highest potency of essential herbs, preserving their raw therapeutic and healing powers.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon-wrapper">
+                            <span class="benefit-icon">🛡️</span>
+                        </div>
+                        <h3>Tested & Family Safe</h3>
+                        <p>Carefully formulated and dermatologically tested to ensure supreme safety for kids, adults, and sensitive skin types alike.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon-wrapper">
+                            <span class="benefit-icon">🌍</span>
+                        </div>
+                        <h3>Eco-Friendly & Sustainable</h3>
+                        <p>Committed to Mother Earth with non-toxic, biodegradable ingredients and responsible packaging that respects nature.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- About Story Section -->
+        <section id="about" class="about">
+            <div class="container about-container">
+                <div class="about-card">
+                    <div class="about-content">
+                        <span class="section-tag light-tag">Our Heritage & Mission</span>
+                        <h2 class="section-title light-title">The Story Behind Ayushree Herbals</h2>
+                        <p class="about-lead">
+                            Ayushree Herbals was founded with a singular, heartfelt vision: to reconnect modern skincare with the pure, time-tested healing wisdom of nature.
+                        </p>
+                        <p class="about-text">
+                            In an era dominated by synthetic additives and harsh chemicals, we wanted to create daily essentials that nurture your skin naturally. Every product in our collection—from our soothing <strong>Ayukid</strong> soap for little ones, radiant <strong>Looks</strong> beauty bar, therapeutic <strong>Ayuderm</strong> relief, authentic <strong>Panchagavya</strong> formulation, to our biodegradable <strong>Herbal Detergent</strong>—is made with unconditional passion for purity.
+                        </p>
+                        <p class="about-text">
+                            Based in Bengaluru, we take pride in delivering trusted, quality herbal solutions that nourish your family with safety and love.
+                        </p>
+                        <div class="about-badges">
+                            <div class="about-badge-item">
+                                <strong>Authentic</strong>
+                                <span>Ayurvedic Wisdom</span>
+                            </div>
+                            <div class="about-badge-item">
+                                <strong>Small Batch</strong>
+                                <span>High Potency</span>
+                            </div>
+                            <div class="about-badge-item">
+                                <strong>Bengaluru</strong>
+                                <span>Handcrafted in India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Customer Love</span>
+                    <h2 class="section-title">What Our Customers Say</h2>
+                    <p class="section-subtitle">Real experiences from families across Bengaluru and beyond</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"Panchagavya soap is simply unmatched! It leaves the skin feeling clean, rejuvenated, and moisturized without that dry stretchy feeling. Our entire family has made the switch."</p>
+                        <div class="testimonial-author">
+                            <strong>— Ramesh K.</strong>
+                            <span>Bengaluru, Verified Buyer</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"Ayukid soap is the best thing I discovered for my 4-year-old child. It is so gentle, has a lovely soothing scent, and doesn't cause any eye stinging or skin irritation."</p>
+                        <div class="testimonial-author">
+                            <strong>— Deepa S.</strong>
+                            <span>Bengaluru, Verified Buyer</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"Ayuderm worked wonders for my sensitive skin and seasonal redness. Within a week of regular use, the irritation subsided completely. Truly 100% natural!"</p>
+                        <div class="testimonial-author">
+                            <strong>— Venkatesh M.</strong>
+                            <span>Mysuru, Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Order Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Let's Connect</span>
+                    <h2 class="section-title">Get In Touch & Order Directly</h2>
+                    <p class="section-subtitle">We are always happy to help with inquiries, bulk orders, or product recommendations</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p class="contact-intro">Reach out to us directly via WhatsApp, Phone, or Email for rapid response and personal assistance.</p>
+                        
+                        <div class="info-list">
+                            <a href="tel:9448429858" class="info-item">
+                                <div class="info-icon">📞</div>
+                                <div class="info-text">
+                                    <span class="info-label">Call Us</span>
+                                    <span class="info-val">+91 94484 29858</span>
+                                </div>
+                            </a>
+
+                            <a href="https://wa.me/918762616609" target="_blank" rel="noopener noreferrer" class="info-item">
+                                <div class="info-icon">💬</div>
+                                <div class="info-text">
+                                    <span class="info-label">WhatsApp Chat</span>
+                                    <span class="info-val">+91 87626 16609</span>
+                                </div>
+                            </a>
+
+                            <a href="mailto:ayushreeherbals@gmail.com" class="info-item">
+                                <div class="info-icon">✉️</div>
+                                <div class="info-text">
+                                    <span class="info-label">Email Support</span>
+                                    <span class="info-val">ayushreeherbals@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <div class="info-item location-item">
+                                <div class="info-icon">📍</div>
+                                <div class="info-text">
+                                    <span class="info-label">Workshop & Address</span>
+                                    <span class="info-val">Anagha #134, 2nd Main, 3rd Cross, Ramaiah Layout, Bengaluru - 560084</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quick-order-card">
+                            <h4>🚀 Instant Ordering via WhatsApp</h4>
+                            <p>Prefer quick texting? Tap below to open an immediate chat with our customer support team.</p>
+                            <a href="https://wa.me/918762616609?text=Hello%20Ayushree%20Herbals,%20I%20would%20like%20to%20order%20products." target="_blank" rel="noopener noreferrer" class="cta-button full-btn">
+                                Open WhatsApp Chat 💬
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <h3>Send Us a Message</h3>
+                        <p class="form-subtext">Fill out the quick form below and send it straight to our WhatsApp for instant response.</p>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Full Name *</label>
+                                <input type="text" id="name" placeholder="e.g. Ramesh Kumar" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone / WhatsApp Number</label>
+                                <input type="tel" id="phone" placeholder="e.g. 9876543210">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="productSelect">Interested Product</label>
+                                <select id="productSelect">
+                                    <option value="All Products / General Inquiry">All Products / General Inquiry</option>
+                                    <option value="Panchagavya Soap">Panchagavya Soap (Bestseller)</option>
+                                    <option value="Ayukid Soap">Ayukid Soap (Kids Special)</option>
+                                    <option value="Looks Soap">Looks Soap (Beauty & Glow)</option>
+                                    <option value="Ayuderm Soap">Ayuderm Soap (Therapeutic Care)</option>
+                                    <option value="Herbal Detergent Powder">Herbal Detergent Powder</option>
+                                    <option value="Bulk / Distributor Order">Bulk / Distributor Order</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Your Message or Quantity *</label>
+                                <textarea id="message" placeholder="Please let us know which items or quantity you'd like to order..." rows="4" required></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-button">
+                                <span>Send via WhatsApp 📱</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating WhatsApp Action -->
+    <aside class="floating-whatsapp" aria-label="WhatsApp Quick Contact">
+        <a href="https://wa.me/918762616609?text=Hello%20Ayushree%20Herbals,%20I%20would%20like%20to%20know%20more%20about%20your%20herbal%20products." target="_blank" rel="noopener noreferrer" class="whatsapp-btn" title="Chat on WhatsApp">
+            <svg viewBox="0 0 32 32" class="wa-icon" fill="currentColor">
+                <path d="M16 0.5C7.4 0.5 0.5 7.4 0.5 16c0 2.8 0.7 5.4 2 7.7L0.6 31.4l7.9-2.1c2.2 1.2 4.7 1.8 7.5 1.8 8.6 0 15.5-6.9 15.5-15.5S24.6 0.5 16 0.5zm0 28.3c-2.4 0-4.6-0.6-6.6-1.8l-0.5-0.3-4.9 1.3 1.3-4.8-0.3-0.5c-1.3-2-2-4.4-2-6.8 0-7.3 5.9-13.2 13.2-13.2 7.3 0 13.2 5.9 13.2 13.2 0 7.3-6 13.1-13.4 13.1zm7.2-9.9c-0.4-0.2-2.3-1.1-2.7-1.3s-0.6-0.2-0.9 0.2c-0.3 0.4-1.1 1.3-1.3 1.6s-0.5 0.3-0.9 0.1c-0.4-0.2-1.7-0.6-3.3-2-1.2-1.1-2-2.4-2.3-2.8s0-0.6 0.2-0.8c0.2-0.2 0.4-0.5 0.6-0.7s0.3-0.4 0.4-0.7c0.1-0.3 0.1-0.5 0-0.7s-0.9-2.2-1.2-3c-0.3-0.8-0.6-0.7-0.9-0.7h-0.8c-0.3 0-0.7 0.1-1.1 0.5s-1.5 1.5-1.5 3.6c0 2.1 1.5 4.2 1.7 4.5s3 4.6 7.3 6.4c1 0.4 1.8 0.7 2.4 0.9 1 0.3 2 0.3 2.7 0.2 0.8-0.1 2.3-0.9 2.6-1.8s0.3-1.7 0.2-1.8c-0.1-0.1-0.4-0.2-0.8-0.4z"/>
+            </svg>
+            <span class="whatsapp-text">Chat with us</span>
+        </a>
+    </aside>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Ayushree Herbals. All rights reserved.</p>
-            <p>Crafted with care for your skin</p>
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="images/logo.png" alt="Ayushree Herbals Logo" class="footer-logo">
+                    <h3>Ayushree Herbals</h3>
+                    <p>Authentic Ayurvedic formulations crafted with botanical purity for the well-being of your whole family.</p>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Our Products</a></li>
+                        <li><a href="#benefits">Why Choose Us</a></li>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#testimonials">Customer Reviews</a></li>
+                        <li><a href="#contact">Contact & Orders</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Our Collection</h4>
+                    <ul>
+                        <li><a href="#products">Panchagavya Soap</a></li>
+                        <li><a href="#products">Ayukid Soap</a></li>
+                        <li><a href="#products">Looks Soap</a></li>
+                        <li><a href="#products">Ayuderm Soap</a></li>
+                        <li><a href="#products">Herbal Detergent Powder</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Contact Us</h4>
+                    <p>📍 Ramaiah Layout, Bengaluru 560084</p>
+                    <p>📞 +91 94484 29858</p>
+                    <p>💬 +91 87626 16609</p>
+                    <p>✉️ ayushreeherbals@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ayushree Herbals. All rights reserved. Handcrafted with care in Bengaluru, India.</p>
+            </div>
         </div>
     </footer>
 
+    <!-- Interactive JavaScript -->
     <script>
-        // Learn More Button Handler
-        document.addEventListener('DOMContentLoaded', function() {
-            const learnMoreButtons = document.querySelectorAll('.buy-button');
+        // Mobile Navigation Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
 
-            learnMoreButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    // Scroll to contact section
-                    document.getElementById('contact').scrollIntoView({
-                        behavior: 'smooth'
-                    });
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('open');
+                menuToggle.classList.toggle('active');
+            });
+
+            // Close menu when clicking nav item
+            document.querySelectorAll('.nav-item').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('open');
+                    menuToggle.classList.remove('active');
                 });
             });
+        }
+
+        // Header Background Shadow on Scroll
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('site-header');
+            if (window.scrollY > 40) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
         });
 
-        // WhatsApp Form Handler
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
+        // WhatsApp Contact Form Handler
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
 
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
+                const name = document.getElementById('name').value.trim();
+                const phone = document.getElementById('phone').value.trim();
+                const product = document.getElementById('productSelect').value;
+                const message = document.getElementById('message').value.trim();
 
-            // Format the WhatsApp message
-            const whatsappMessage = `*New Contact Form Message*%0A%0A` +
+                let formattedMsg = `*🌿 New Ayushree Herbals Website Inquiry*%0A%0A` +
                                    `*Name:* ${encodeURIComponent(name)}%0A` +
-                                   `*Email:* ${encodeURIComponent(email)}%0A` +
-                                   `*Message:* ${encodeURIComponent(message)}`;
+                                   (phone ? `*Phone:* ${encodeURIComponent(phone)}%0A` : '') +
+                                   `*Product:* ${encodeURIComponent(product)}%0A` +
+                                   `*Message / Requirement:* ${encodeURIComponent(message)}%0A%0A` +
+                                   `_Sent from website: ayushreeherbals.com_`;
 
-            // WhatsApp number (Indian format: 91 + 10 digit number)
-            const phoneNumber = '918762616609';
+                const whatsappNumber = '918762616609';
+                const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${formattedMsg}`;
 
-            // Create WhatsApp URL
-            const whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
-
-            // Open WhatsApp
-            window.location.href = whatsappURL;
-
-            // Reset form
-            this.reset();
-        });
+                window.open(whatsappUrl, '_blank');
+            });
+        }
     </script>
 </body>
 
